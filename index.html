@@ -3,130 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>投资洞察 | 美股 & A股机会</title>
+    <title>投资洞察 | 全球股市机会分析</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Sans SC', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%); }
         .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.2); }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .tag { @apply px-2 py-1 rounded text-xs font-medium; }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
     <!-- Header -->
-    <header class="gradient-bg text-white py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-5xl font-bold mb-4">📈 投资洞察</h1>
-            <p class="text-xl text-blue-100">全球股市投资机会分析</p>
-            <p class="mt-4 text-blue-200">2025年3月 · 未来一个月机会展望</p>
+    <header class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <h1 class="text-4xl font-bold">📈 投资洞察</h1>
+                    <p class="text-blue-100 mt-2">全球股市投资机会分析</p>
+                </div>
+                <div class="text-right">
+                    <div class="text-sm text-blue-200">报告日期</div>
+                    <div class="text-xl font-semibold">2025年3月7日</div>
+                    <div class="text-sm text-blue-200 mt-1">展望周期：未来一个月</div>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <section class="container mx-auto px-4 -mt-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <!-- US Stock Card -->
+    <section class="container mx-auto px-4 -mt-6">
+        <div class="max-w-5xl mx-auto space-y-6">
+            
+            <!-- US Stock Item -->
             <a href="./us-stock-opportunities/" class="block">
-                <div class="bg-white rounded-2xl shadow-xl p-8 card-hover border-t-4 border-blue-500">
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-4xl">🇺🇸</div>
-                        <span class="text-blue-500 font-semibold">点击进入 →</span>
-                    </div>
-                    <h2 class="text-2xl font-bold text-gray-800 mb-3">美股投资机会</h2>
-                    <p class="text-gray-600 mb-4">标普500 · 纳斯达克 · 道琼斯</p>
-                    <div class="space-y-2">
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                            AI芯片与云计算
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-blue-500">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Left: Icon & Title -->
+                        <div class="flex items-start gap-4 md:w-1/4">
+                            <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-3xl flex-shrink-0">🇺🇸</div>
+                            <div>
+                                <h2 class="text-xl font-bold text-gray-800">美股投资机会</h2>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="tag bg-blue-100 text-blue-700">科技主导</span>
+                                    <span class="tag bg-green-100 text-green-700">降息预期</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                            减肥药与医疗器械
+                        
+                        <!-- Middle: Summary -->
+                        <div class="md:w-2/4">
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                美联储降息预期升温，AI投资热潮延续。重点关注AI芯片（NVDA、AMD）、云计算（MSFT、AMZN）、减肥药（LLY、NVO）等板块。科技股估值修复空间大，但需警惕地缘政治风险。
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="tag bg-gray-100 text-gray-600">标普500</span>
+                                <span class="tag bg-gray-100 text-gray-600">纳斯达克</span>
+                                <span class="tag bg-gray-100 text-gray-600">道琼斯</span>
+                                <span class="tag bg-gray-100 text-gray-600">AI芯片</span>
+                                <span class="tag bg-gray-100 text-gray-600">云计算</span>
+                                <span class="tag bg-gray-100 text-gray-600">减肥药</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                            能源与周期板块
-                        </div>
-                    </div>
-                    <div class="mt-6 pt-6 border-t border-gray-100">
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">市场状态</span>
-                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">科技主导</span>
+                        
+                        <!-- Right: Meta -->
+                        <div class="md:w-1/4 flex flex-col justify-between text-right">
+                            <div>
+                                <div class="text-sm text-gray-500">更新日期</div>
+                                <div class="font-medium">2025-03-07</div>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-blue-500 font-semibold">查看详情 →</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </a>
 
-            <!-- A-Stock Card -->
+            <!-- A-Stock Item -->
             <a href="./a-stock-opportunities/" class="block">
-                <div class="bg-white rounded-2xl shadow-xl p-8 card-hover border-t-4 border-red-500">
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-4xl">🇨🇳</div>
-                        <span class="text-red-500 font-semibold">点击进入 →</span>
-                    </div>
-                    <h2 class="text-2xl font-bold text-gray-800 mb-3">A股投资机会</h2>
-                    <p class="text-gray-600 mb-4">上证指数 · 创业板指 · 科创板</p>
-                    <div class="space-y-2">
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                            AI算力与半导体
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-red-500">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Left: Icon & Title -->
+                        <div class="flex items-start gap-4 md:w-1/4">
+                            <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-3xl flex-shrink-0">🇨🇳</div>
+                            <div>
+                                <h2 class="text-xl font-bold text-gray-800">A股投资机会</h2>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="tag bg-red-100 text-red-700">政策驱动</span>
+                                    <span class="tag bg-orange-100 text-orange-700">两会行情</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                            新能源与储能
+                        
+                        <!-- Middle: Summary -->
+                        <div class="md:w-2/4">
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                两会政策密集出台，GDP目标5%左右，财政发力。重点关注AI算力（CPO、半导体设备）、新能源（储能、智能电网）、创新药（GLP-1、CXO）等板块。结构性行情明显，精选个股为主。
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="tag bg-gray-100 text-gray-600">上证指数</span>
+                                <span class="tag bg-gray-100 text-gray-600">创业板指</span>
+                                <span class="tag bg-gray-100 text-gray-600">AI算力</span>
+                                <span class="tag bg-gray-100 text-gray-600">半导体</span>
+                                <span class="tag bg-gray-100 text-gray-600">新能源</span>
+                                <span class="tag bg-gray-100 text-gray-600">创新药</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-2 text-sm text-gray-600">
-                            <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                            创新药与消费
-                        </div>
-                    </div>
-                    <div class="mt-6 pt-6 border-t border-gray-100">
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">市场状态</span>
-                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">政策驱动</span>
+                        
+                        <!-- Right: Meta -->
+                        <div class="md:w-1/4 flex flex-col justify-between text-right">
+                            <div>
+                                <div class="text-sm text-gray-500">更新日期</div>
+                                <div class="font-medium">2025-03-07</div>
+                            </div>
+                            <div class="mt-4">
+                                <span class="text-red-500 font-semibold">查看详情 →</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </a>
+
         </div>
     </section>
 
-    <!-- Features -->
-    <section class="container mx-auto px-4 mt-16 mb-16">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">分析维度</h2>
+    <!-- Analysis Dimensions -->
+    <section class="container mx-auto px-4 mt-12">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-lg font-bold text-gray-800 mb-4">分析维度</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-white rounded-xl shadow p-4 text-center">
-                    <div class="text-3xl mb-2">📊</div>
-                    <div class="font-semibold text-gray-700">宏观驱动</div>
+                <div class="bg-white rounded-lg shadow p-4 text-center">
+                    <div class="text-2xl mb-2">📊</div>
+                    <div class="font-medium text-gray-700 text-sm">宏观驱动</div>
+                    <div class="text-xs text-gray-500 mt-1">政策/利率/地缘</div>
                 </div>
-                <div class="bg-white rounded-xl shadow p-4 text-center">
-                    <div class="text-3xl mb-2">🔥</div>
-                    <div class="font-semibold text-gray-700">热点板块</div>
+                <div class="bg-white rounded-lg shadow p-4 text-center">
+                    <div class="text-2xl mb-2">🔥</div>
+                    <div class="font-medium text-gray-700 text-sm">热点板块</div>
+                    <div class="text-xs text-gray-500 mt-1">AI/新能源/医药</div>
                 </div>
-                <div class="bg-white rounded-xl shadow p-4 text-center">
-                    <div class="text-3xl mb-2">💡</div>
-                    <div class="font-semibold text-gray-700">投资机会</div>
+                <div class="bg-white rounded-lg shadow p-4 text-center">
+                    <div class="text-2xl mb-2">💡</div>
+                    <div class="font-medium text-gray-700 text-sm">投资机会</div>
+                    <div class="text-xs text-gray-500 mt-1">个股/板块/策略</div>
                 </div>
-                <div class="bg-white rounded-xl shadow p-4 text-center">
-                    <div class="text-3xl mb-2">⚠️</div>
-                    <div class="font-semibold text-gray-700">风险评估</div>
+                <div class="bg-white rounded-lg shadow p-4 text-center">
+                    <div class="text-2xl mb-2">⚠️</div>
+                    <div class="font-medium text-gray-700 text-sm">风险评估</div>
+                    <div class="text-xs text-gray-500 mt-1">低/中/高风险</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Risk Warning -->
-    <section class="container mx-auto px-4 mb-12">
-        <div class="max-w-4xl mx-auto bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-red-500 p-6 rounded-r-xl">
-            <div class="flex items-start gap-4">
-                <span class="text-3xl">⚠️</span>
+    <!-- Disclaimer -->
+    <section class="container mx-auto px-4 mt-12 mb-12">
+        <div class="max-w-5xl mx-auto bg-gradient-to-r from-orange-50 to-red-50 border border-red-200 rounded-lg p-4">
+            <div class="flex items-start gap-3">
+                <span class="text-xl">⚠️</span>
                 <div>
-                    <h4 class="font-bold text-red-800 text-lg">风险提示</h4>
-                    <p class="text-sm text-red-700 mt-2">
-                        以上内容仅供参考，不构成投资建议。股市有风险，投资需谨慎。
-                        请根据自身风险承受能力做出投资决策，建议咨询专业投资顾问。
+                    <h4 class="font-bold text-red-800 text-sm">风险提示</h4>
+                    <p class="text-xs text-red-700 mt-1">
+                        以上内容仅供参考，不构成投资建议。股市有风险，投资需谨慎。请根据自身风险承受能力做出投资决策。
                     </p>
                 </div>
             </div>
@@ -134,11 +174,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-lg">投资洞察 · 全球股市分析</p>
-            <p class="mt-2">生成时间：2025年3月7日 | 数据仅供参考</p>
-            <p class="mt-4 text-sm">Powered by 蟹 Bro AI</p>
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>投资洞察 · 全球股市分析</p>
+            <p class="mt-1 text-xs">生成时间：2025年3月7日 | 数据仅供参考</p>
         </div>
     </footer>
 </body>
